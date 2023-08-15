@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Research and Extensions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width; initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+
+</head>
+<body>
+
+	<!-- Navbar Section Start -->
+	<nav class="navbar navbar-dark navbar-expand-lg"  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="img/logo1.png" class="img-fluid p-0" style="width: 35%; filter: brightness(0) invert(1);">
+				
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navBar">
+				<ul class="navbar-nav  ml-auto ">
+
+					<li class="nav-item">
+						<a class="nav-link " href="index.html">Home</a>
+					</li>
+					<li id="openModalButton">
+						<a class="nav-link">Forms</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+					<li class="nav-item  active">
+						<a class="nav-link" href="events.html">Events</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal-header">
+					<h2>Downloadable Forms</h2>
+				</div>
+				<p class="select-form">Select a form:</p>
+				<select>
+					<option value="form1">Form 1</option>
+					<option value="form2">Form 2</option>
+					<option value="form3">Form 3</option>
+				</select>
+			</div>
+		</div>
+	</nav>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('myModal');
+    const openModalButton = document.getElementById('openModalButton');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    openModalButton.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+	</script>
+	<!-- Nav Section End -->
+
+	
+	<!-- Blog Section Start -->
+	<section id="blog" class="text-center py-5 text-light">
+		<div class="inner-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col mt-5 pt-4">
+						<br>
+						<h1 class="text-light">Events</h1 >
+						<hr>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog Section End -->
+
+	<!-- Blog Post Section Start -->
+	<section id="blog-post" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-12">
+					<div class="card-columns">
+						<div class="card">
+							<img src="img/gallery1.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Second Quarter In-House Review 2022</h4>
+								<small class="text-muted">Ongoing..
+								</small>
+								<hr>
+								<p class="lead">The Research and Extension Unit will conduct its 2nd Quarterly In-House Review 2022.
+									Your submission of proposal is highly encouraged.
+									<br><br>
+									To submit your proposal, please submit thru ccatre@cvsu.edu.ph or thru Create Portal.<br>	 <a href="https://createportal.cvsuccatre.com/">Click Here</a>
+									<br><br>
+									What are you waiting for? Submit your proposal now!</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="img/gallery77.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">CvSU-CCAT CSC Review Closing Ceremony</h4>
+								<small class="text-muted">June 24, 2022</small>
+								<hr>
+								<p class="lead">Congratulation to all the participants, lecturers and facilitators of the CvSU-CCAT CSC Review.</p>
+								<a href="#" class="btn btn-dark btn-block">Find out more</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="img/gallery9.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Conducting Research & Extension in New Normal:
+									A FOCUS ON GENDER-SENSITIVE APPROACHES</h4>
+								<small class="text-muted">June 03, 2022
+
+								</small>
+								<hr>
+								<p class="lead">The Cavite State University – CCAT Campus recognizes the essentiality of research-productive and extension-sensitive faculty members. Hence, this proposed webinar by the Gender and Development Unit and Research and Extension Office focused on equipping and developing Gender-Sensitive Researchers and Extensionists.
+									<br><br>
+									We invite the Cavite State University – CCAT Campus Researchers and Extensionists and the other interested participants to this Webinar entitled: “Conducting Research and Extension in New Normal: A Focus on Gender-Sensitive Approaches” which will be held on June 3, 2022, From 8:00 AM to 5:00 PM via Cisco WebEx and Facebook Live.</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="img/gallery6.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Writing R&D Papers for Publication</h4>
+								<small class="text-muted">April 08, 2022 Friday, 8:00 am - 12:00 pm</small>
+								<hr>
+								<p class="lead">Greetings!
+									The webinar for this 25th day of March entitled "Writing Research & Design for Publication" will be moved on April 08, 2022.
+									The registration is still up.
+									To register, kindly sign up to this link:
+									<a href="https://docs.google.com/forms/d/1PyuJy7yxjg7LOCoHzrM12ewrtZ7q9NGCnXw47_W5xdY/closedform">Click here</a>
+									For more inquiries and concerns, please do not hesitate to message us.
+									Don't forget to like and follow our page for more updates.
+									<br><br>
+									What are you waiting for? Submit your proposal now!</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="card-columns">
+						<div class="card">
+							<img src="img/gallery3.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Networking for Collaborative Research and Development</h4>
+								<small class="text-muted">May 27, 2022</small>
+								<hr>
+								<p class="lead">Greetings!	<br><br>
+									The webinar for this 27th day of May entitled "Networking for Collaborative Research and Development with Dr. Gilbert Pascua-Cabilangan Magulod Jr, University Director, Knowledge Management, Cagayan State University and Dr. Ivy Corazon A. Mangaya-ay, Faculty Regent and University Statistician in the Bohol Island State University - Main.</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="img/gallery5.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Doing Research in New Normal</h4>
+								<small class="text-muted">May 13, 2022</small>
+								<hr>
+								<p class="lead">Good day, CCATians!<br>
+									The Research and Extension are organizing a webinar about "Webinar 2: Doing Research on New Normal" on May 13, 2022, via Cisco WebEx and Facebook Live.
+								<br><br>
+									We would be glad if you could join and participate.</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="img/gallery4.jpg" class="img-fluid card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Research and Extension In-House Review 2022</h4>
+								<small class="text-muted">March 01, 2022</small>
+								<hr>
+								<p class="lead">Congratulation to all the participants of the first Quarter In-house Review 2022.</p>
+								<a href="#" class="btn btn-dark btn-block">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog Post Section End -->
+
+
+	<!-- Footer Section Start -->
+	<footer id="footer" class="py-3 text-center text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="display-5 mb-0 text-light">Research and Extension</h2>
+					<div class="d-flex flex-row justify-content-center p-3">
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+						
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					All Rights Reserved by Cavite State University
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+</body>
+</html>

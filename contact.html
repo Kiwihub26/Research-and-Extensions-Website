@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Research and Extension</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width; initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+	<!-- Navbar Section Start -->
+	<nav class="navbar navbar-dark navbar-expand-lg"  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="img/logo1.png" class="img-fluid p-0" style="width: 35%; filter: brightness(0) invert(1);">
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navBar">
+				<ul class="navbar-nav  ml-auto ">
+
+					<li class="nav-item">
+						<a class="nav-link " href="index.html">Home</a>
+					</li>
+					<li id="openModalButton">
+						<a class="nav-link">Forms</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="events.html">Events</a>
+					</li>
+					
+					<li class="nav-item active">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="modal-header">
+						<h2>Downloadable Forms</h2>
+					</div>
+					<p class="select-form">Select a form:</p>
+					<select>
+						<option value="form1">Form 1</option>
+						<option value="form2">Form 2</option>
+						<option value="form3">Form 3</option>
+					</select>
+				</div>
+			</div>
+	</nav>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('myModal');
+    const openModalButton = document.getElementById('openModalButton');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    openModalButton.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+	</script>
+	<!-- Contact Section End -->
+
+	<!-- Contact Main Section Start -->
+	<section class="contact section" id="contact">
+		<div class="contact__container container grid">
+			<div class="contact__content">
+				<div class="contact__info">
+					<div class="contact__card">
+						<i class="uil uil-envelope-edit contact__card-icon"></i>
+						<h3 class="contact__card-data">Email</h3>
+						<span class="contact__card-title">cvsuccatre@gmail.com<br>
+							ccatre@cvsu.edu.ph</span>
+						<span class="contact__button">
+							Write us<i class="uil uil-arrow-right contact__button-icon"></i>
+						</span>
+					</div>
+
+					<div class="contact__card">
+						<i class="uil uil-whatsapp contact__card-icon"></i>
+						<h3 class="contact__card-data">Whatsapp</h3>
+						<span class="contact__card-title">87000</span>
+						<span class="contact__button">
+							Write us<i class="uil uil-arrow-right contact__button-icon"></i>
+						</span>
+					</div>
+
+					<div class="contact__card">
+						<i class="uil uil-facebook-messenger contact__card-icon"></i>
+						<h3 class="contact__card-data">Messenger</h3>
+						<span class="contact__card-title">CVSU CCAT - Research and Extension Unit</span>
+						<span class="contact__button">
+							<a class ="message"href="https://www.facebook.com/media/set/?set=a.169883142279640&type=3">Write us</a><i class="uil uil-arrow-right contact__button-icon"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact__content">
+				<form action="send_email.php" method="post" class="contact__form">
+					<div class="input__container">
+						<input type="text" class="input" name="username">
+						<label for="">Username</label>
+						<span>Username</span>
+					</div>
+
+					<div class="input__container">
+						<input type="email" class="input" name="email">
+						<label for="">Email</label>
+						<span>Email</span>
+					</div>
+					<div class="input__container">
+						<input type="tel" class="input" name="phone">
+						<label for="">Phone</label>
+						<span>Phone</span>
+					</div>
+					<div class="input__container textarea">
+						<textarea name="message" id="" class="input"></textarea>
+						<label for="">Messenger</label>
+						<span>Message</span>
+					</div>
+					<button type="submit" class="button">
+						<i class="uil uil-navigator button__icon"></i>
+						Send Message
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Contact Main Section End -->
+<script>
+	const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+}
+
+function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+        parent.classList.remove("focus");
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+});
+
+</script>
+
+	<!-- Footer Section Start -->
+	<footer id="footer" class="py-3 text-center text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="display-5 mb-0 text-light">Research and Extension</h2>
+					<div class="d-flex flex-row justify-content-center p-3">
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+						
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					All Rights Reserved by Cavite State University
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<title>Research and Extensions</title>
+</head>
+<body>
+
+	<!-- Navbar Section Start -->
+	<nav class="navbar navbar-dark navbar-expand-lg"  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="img/logo1.png" class="img-fluid p-0" style="width: 35%; filter: brightness(0) invert(1);">
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navBar">
+				<ul class="navbar-nav  ml-auto ">
+
+					<li class="nav-item active">
+						<a class="nav-link " href="index.html">Home</a>
+					</li>
+					 <li id="openModalButton">
+						<a class="nav-link">Forms</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="events.html">Events</a>
+					</li>
+				
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="modal-header">
+						<h2>Downloadable Forms</h2>
+					</div>
+					<p class="select-form">Select a form:</p>
+					<select>
+						<option value="form1">Form 1</option>
+						<option value="form2">Form 2</option>
+						<option value="form3">Form 3</option>
+					</select>
+				</div>
+			</div>
+	</nav>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('myModal');
+    const openModalButton = document.getElementById('openModalButton');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    openModalButton.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+	</script>
+	<!-- Nav Section End -->
+
+	<!-- Slider Section Start -->
+	<section id="slider" class="bg-dark"> 
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item crs-img-1 active">
+					<div class="container">
+						<div class="carousel-caption pb-5 mb-5 text-left">
+							<h2 class="display-4 text-light">CREATE PORTAL</h2>
+							<p class="lead">
+								Connecting Research and Extension through Automation and Technology towards Efficiency
+							</p>
+							<a href="#" class="btn btn-success">See More</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item crs-img-2">
+					<div class="container">
+						<div class="carousel-caption mb-5 text-center">
+							<h2 class="display-4 text-light">CREATE PORTAL</h2>
+							<p>
+								Connecting Research and Extension through Automation and Technology towards Efficiency.
+							</p>
+							<a href="#" class="btn btn-warning">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item crs-img-3">
+					<div class="container">
+						<div class="carousel-caption pb-5 mb-5 text-right">
+							<h2 class="display-4 text-light">CREATE PORTAL</h2>
+							<p>
+								Connecting Research and Extension through Automation and Technology towards Efficiency.
+							</p>
+							<a href="#" class="btn btn-info">Learn More</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#myCarousel" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>		
+	</section>
+	<!-- Slider Section End -->
+
+	<!-- Showcase Section Start -->
+	<section id="showcase">
+		<div class="container">
+			<div class="row py-5 text-center">
+				<div class="col-lg-4 col-md-4">
+					<h2>University Vision</h3>
+						<hr>
+					<p class="lead mt-2">The Premier University in historic Cavite recognized for excellence in the development of globally competitive and morally upright individuals.</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					
+					<h2>University Mission</h3>
+						<hr>
+					<p class="lead mt-2">CAVITE STATE UNIVERSITY shall provide excellent, equitable and relevant educational opportunities in the arts, sciences, and technology through quality instruction and responsive research and development activities. It shall produce professional skilled and morally upright individuals for global competitiveness.</p>
+				</div>
+				
+				<div class="col-lg-4 col-md-4">
+					
+					<h2>University Goals</h3>
+						<hr>
+					<p class="lead mt-2">CvSU CCAT Campus aims to produce productive graduates, professionals, and experts marked by global excellent and moral uprightness through the following:
+						1. Offer various programs/courses relevant to the needs of the clients for global competitiveness.
+						<br>
+						2. Upgrade the qualification and competencies of the teaching and non-teaching personnel for quality service.
+						<br>
+						3. Improve facilities relevant for effective and efficient education and training.
+						<br>
+						4. Engage in research and extension project/activities that will lead to instruction and community improvement.
+						<br>	
+						5. Strengthen linkages with local and international agencies for instruction, research, development, and production.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Showcase Section End -->
+
+	<!-- Get Started Section Start -->
+	<section id="get-started"   class="text-center py-5 text-light">
+		<div class="inner-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col mt-5 pt-4 gC">
+						<h3 class="text-light">Quality Policy</h3>
+						<p class="lead">
+							We Commit to the highest standards of education, value our stakeholders, Strive for continual improvement of our products and services, and Uphold the University’s tenets of Truth, Excellence, and Service to produce globally competitive and morally upright individuals.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Get Started Section End -->
+
+
+	<!-- Video Section Start -->
+	<section id="video" class="text-center text-light">
+		<div class="video-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col mt-5 pt-4">
+						<div uk-lightbox>
+							<a href="https://youtu.be/1ADqC0eq18M">
+								<i class="fas fa-play"></i>
+							</a>
+						</div>
+						<h2 class=" mt-5 text-light">'CREATE' Portal Tutorial</h2>
+						<p class="lead">Click Play Button To See</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section Start -->
+	<footer id="footer" class="py-3 text-center text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="display-5 mb-0 text-light">Research and Extension</h2>
+					<div class="d-flex flex-row justify-content-center p-3">
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+						
+						<div class="px-5">
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					All Rights Reserved by Cavite State University
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>.
+
+</body>
+</html>
